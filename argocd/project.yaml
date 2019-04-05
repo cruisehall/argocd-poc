@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hw-git-cm
+data:
+  repositories: |
+    - url: https://github.com/cruisehall/hello-world-golang-server.git
