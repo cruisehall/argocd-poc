@@ -6,6 +6,11 @@ data:
   repositories: |
     - url: https://github.com/cruisehall/hello-world-golang-server.git
 ---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: hw-go
+---
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
