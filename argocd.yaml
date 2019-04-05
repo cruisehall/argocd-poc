@@ -54,6 +54,9 @@ metadata:
   name: hello-world
 spec:
   project: argocd-poc
+  syncPolicy:
+    automated:
+      prune: true
   source:
     repoURL: https://github.com/cruisehall/hello-world-golang-server.git
     targetRevision: master
