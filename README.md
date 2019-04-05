@@ -3,6 +3,12 @@ Proof of concept Argo CD project
 
 ## Getting Started
 
+1. Create the `hw-go` namespace:
+
+```sh
+kubectl create namespace hw-go
+```
+
 1. Set the context to the `argocd` namespace:
 
 ```sh
