@@ -43,3 +43,6 @@ Proof of concept Argo CD project
     ```sh
     kubectl apply -f main.yaml
     ```
+
+
+https://kustomize.io/
