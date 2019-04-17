@@ -64,7 +64,7 @@ spec:
       prune: true
   source:
     repoURL: https://github.com/cruisehall/hello-world-golang-server.git
-    targetRevision: master
+    targetRevision: k8s/dev
     path: k8s/dev
   destination:
     server: https://kubernetes.default.svc
