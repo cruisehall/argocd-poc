@@ -2,6 +2,10 @@
 
 Proof of concept Argo CD project
 
+## Contents
+
+[CD Considerations](./docs/cd_considerations.md)
+
 ## Getting Started
 
 ### Prerequisites
