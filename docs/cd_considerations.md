@@ -67,7 +67,7 @@
     prod/
       main.yaml
   ```
-  
+
 ## Open Questions
 
 - Cardinality of Docker Image Registries
@@ -83,8 +83,8 @@ These actions need to be automated to achieve continuos deployment with Argo CD 
 
 | Action | Repo | Actor(s) | Comments |
 |---|---|---|---|
-| Create new manifest release | manifest | CD Tool | Entails bumping the version in the manifest repo, auto-generating the manifest YAMLs as necessary and including in the release commit. |
+| Create new manifest release | manifest | CD Tool | Entails bumping the version in the manifest repo, auto-generating the manifest YAMLs and including in the release commit. |
 | Deploy manifest release to environment | manifest | CD Tool | Achieved by merging a manifest release tag into the `k8s/` branch corresponding to target environment (e.g. `k8s/dev` for `dev` environment) |
 | Create new application release | app | CD Tool | Entails creating new Docker Image w/ tag that corresponds to release tag in application git repo, push to Registry that is accessible by appropriate environments |
-| Deploy new application version to environment | manifest | CD Tool | (**Create new application release**) -> **Create new manifest release** -> **Deploy manifest release to environment** |
+| Deploy new application version to environment | manifest | CD Tool | (**Create new application release**) -> **Create new manifest release** referencing the newly-created Application Version -> **Deploy manifest release to environment** |
 ---
